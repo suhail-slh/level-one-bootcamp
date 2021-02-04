@@ -4,7 +4,7 @@
 void main()
 {
 	char name[MAX_SIZE];
-	printf(“Enter your name: ”);
-	scanf(“%s”,name);
-	printf(“Your name: %s\n”,name);
+	printf("Enter your name: ");
+	scanf("%s",name);
+	printf("Your name: %s\n",name);
 }
