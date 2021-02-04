@@ -3,16 +3,16 @@
 int a,b,sum;
 void get_nums()
 {
-	printf(“Enter two numbers: ”);
-	scanf(“%d%d”,&a,&b);
+	printf("Enter two numbers: ");
+	scanf("%d%d",&a,&b);
 }
 void add_nums()
 {
-  sum=a+b;
+	sum=a+b;
 }
 void display_sum()
 {
-	printf(“Sum: %d\n”,sum);
+	printf("Sum: %d\n",sum);
 }
 int main()
 {
