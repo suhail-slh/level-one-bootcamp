@@ -3,10 +3,10 @@
 int main()
 {
 	double h,d,b,vol;
-	printf(“Enter h,d,b values: ”);
-	scanf(“%lf%lf%lf”,&h,&d,&b);
+	printf("Enter h,d,b values: ");
+	scanf("%lf%lf%lf",&h,&d,&b);
 	vol = ((h*d*b)+(d/b))/3;
-	printf(“Volume: %lf\n”,vol);
-
+	printf("Volume: %lf\n",vol);
+	
 	return 0;
 }
