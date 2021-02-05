@@ -4,16 +4,16 @@
 double x_1,y_1,x_2,y_2,distance;
 void get_params()
 {
-	printf(“Enter the coordinates x_1,y_1,x_2,y_2: ”);
-	scanf(“%lf%lf%lf%lf”,&x_1,&y_1,&x_2,&y_2);
+	printf("Enter the coordinates x_1,y_1,x_2,y_2: ");
+	scanf("%lf%lf%lf%lf",&x_1,&y_1,&x_2,&y_2);
 }
 void find_dist()
 {
-  distance = sqrt( pow(x_2-x_1,2) +  pow(y_2-y_1,2) );
+	distance = sqrt( pow(x_2-x_1,2) + pow(y_2-y_1,2) );
 }
 void display_dist()
 {
-	printf(“Distance: %lf\n”,distance);
+	printf("Distance: %lf\n",distance);
 }
 int main()
 {
