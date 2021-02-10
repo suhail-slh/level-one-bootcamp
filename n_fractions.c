@@ -1,19 +1,31 @@
 //WAP to find the sum of n fractions.
 #include <stdio.h>
-struct fraction{ double num,den; };
+struct fraction{ int num,den; };
 void get_nums(struct fraction *f, int n)
 {
 	printf("Enter the numerators, denominators of the fractions:  ");
-	for(int i=0;i<n;i++)	scanf("%lf%lf",&f[i].num,&f[i].den);
+	for(int i=0;i<n;i++)	scanf("%d%d",&f[i].num,&f[i].den);
 }
 double add_up(struct fraction *f, int n)
 {	
 	double sum = 0;
-	for(int i=0;i<n;i++)		sum += (f[i].num/f[i].den);
+	for(int i=0;i<n;i++)		sum += ((double)f[i].num/f[i].den);
 	return sum;
 }
+int get_gcd(int a, int b)
+{
+	if(a==0)    return b;
+	return get_gcd(b%a, a);
+}
 void display_sum(double sum)
-{	printf("Sum: %lf\n",sum);	}
+{	
+	int num, den, x;
+	sum *= 100;
+	x = get_gcd(sum, 100);
+	num = sum/x;
+	den = 100/x;
+	printf("Sum: %d/%d\n",num,den);	
+}
 int main()
 {
 	int n;	
