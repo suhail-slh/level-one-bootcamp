@@ -1,6 +1,6 @@
 //WAP to find the sum of two fractions.
 #include <stdio.h>
-struct point{	double num,den;	}f1,f2;
+struct fraction{ double num,den; }f1,f2;
 double sum;
 void get_params()
 {
