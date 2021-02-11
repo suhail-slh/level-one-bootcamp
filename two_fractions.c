@@ -18,11 +18,12 @@ int get_gcd(int a, int b)
 }
 void display_sum()
 {	
-	int num, den, x;
-	sum *= 100;
-	x = get_gcd(sum, 100);
+	int num, den, x, y;
+	y = 100;
+	sum *= y;
+	x = get_gcd(sum, y);
 	num = sum/x;
-	den = 100/x;
+	den = y/x;
     	printf("%d/%d + %d/%d = %d/%d\n",f1.num,f1.den,f2.num,f2.den,num,den);	
 }
 int main()
