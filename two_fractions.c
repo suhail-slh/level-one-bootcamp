@@ -23,7 +23,7 @@ void display_sum()
 	x = get_gcd(sum, 100);
 	num = sum/x;
 	den = 100/x;
-    	printf("Sum: %d/%d\n",num,den);	
+    	printf("%d/%d + %d/%d = %d/%d\n",f1.num,f1.den,f2.num,f2.den,num,den);	
 }
 int main()
 {
